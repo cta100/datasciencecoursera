@@ -18,52 +18,49 @@ R Libraries:
 
 Functions:
 
-arrange
-as.character
-cbind
-choose
-colnames
-ddply
-grepl
-install.packages
-library
-make.names
-mean
-ncol
-read.csv
-read.table
-rename
-setnames
-unzip
-write.table
+1. arrange
+2. as.character
+3. cbind
+4. choose
+5.colnames
+6. ddply
+7. grepl
+8. install.packages
+9. library
+10. make.names
+11. mean
+12. ncol
+13. read.csv
+14. read.table
+15. rename
+16. setnames
+17. unzip
+18. write.table
 
 Input Files: (row x columns)
 
-X_test.txt - 2947 x 561 ascii table of test group accelerometer data.
-subject_test.txt 2947 x 1 ascii table of test group subject id data.
-y_test.txt 2947 x 1 ascii table of test group activity type data.
-X_train.txt 7352 x 561 acii table of training group accelerometer data.
-subject_train.txt 7352 x 1 acii table of training group subject id data.
-y_train.txt 7352 x 1 acii table of training group activity type data.
-features.txt 2 x 561 ascii table of observation names.
+1. X_test.txt - 2947 x 561 ascii table of test group accelerometer data.
+2. subject_test.txt 2947 x 1 ascii table of test group subject id data.
+3. y_test.txt 2947 x 1 ascii table of test group activity type data.
+4. X_train.txt 7352 x 561 acii table of training group accelerometer data.
+5. subject_train.txt 7352 x 1 acii table of training group subject id data.
+6. y_train.txt 7352 x 1 acii table of training group activity type data.
+7. features.txt 2 x 561 ascii table of observation names.
 
 Variables:
 
-ac_test_data - table of accelerometer data from  X_test.txt. 
-ac_test_subject - table of subject id data from subject_test.txt
-ac_test_activity - table of activity type data from y_test.txt
-ac_train_data - table of accelerometer data from X_train.txt
-ac_train_subject - table of subject id data from subject_test.txt
-ac_train_acitivity - table of activity type data from y_train.txt
-obs_labels - table of observation names (column names for ac_test_data and ac_train_data) from features.txt
-ac_train_data_ready - table resulting from cbind of ac_train_subject, ac_train_activity, ac_train_data.
-ac_test_data_ready - table resulting from cbind of ac_test_subject, ac_test_activity, ac_test_data.
-ac_data - table resulting from rbind of ac_train_data_ready and ac_test_data_ready.
-ac_mean_std_data - subset of ac_data that contains columns that measured a mean or standard deviation of an observation type. This subset completes objective 2.
-col_count - counter used in FOR loop when subsetting data to build ac_mean_std_data
-c_name - variable to grepl to find a case insensitive string of MEAN or STD.
-tidy_data - data set contain the data set required for objective 5.
-
-
-#
+1. ac_test_data - table of accelerometer data from  X_test.txt. 
+2. ac_test_subject - table of subject id data from subject_test.txt
+3. ac_test_activity - table of activity type data from y_test.txt
+4. ac_train_data - table of accelerometer data from X_train.txt
+5. ac_train_subject - table of subject id data from subject_test.txt
+6. ac_train_acitivity - table of activity type data from y_train.txt
+7. obs_labels - table of observation names (column names for ac_test_data and ac_train_data) from features.txt
+8. ac_train_data_ready - table resulting from cbind of ac_train_subject, ac_train_activity, ac_train_data.
+9. ac_test_data_ready - table resulting from cbind of ac_test_subject, ac_test_activity, ac_test_data.
+10. ac_data - table resulting from rbind of ac_train_data_ready and ac_test_data_ready.
+11. ac_mean_std_data - subset of ac_data that contains columns that measured a mean or standard deviation of an observation type. This subset completes objective 2.
+12. col_count - counter used in FOR loop when subsetting data to build ac_mean_std_data
+13. c_name - variable to grepl to find a case insensitive string of MEAN or STD.
+14. tidy_data - data set contain the data set required for objective 5.
 
