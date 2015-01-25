@@ -11,10 +11,10 @@ Create one R script called run_analysis.R that does the following.
 
 R Libraries:
 
-downloader
-dplyr
-data.table
-plyr
+1. downloader
+2. dplyr
+3. data.table
+4. plyr
 
 Functions:
 
